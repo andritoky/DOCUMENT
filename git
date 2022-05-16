@@ -1,0 +1,41 @@
+Git - LF Will Be Replaced by CRLF
+test : cmd : git config core.autocrlf  si true
+solution :
+git config --global core.autocrlf false
+
+git push origin master
+git push -f origin master
+git push -u origin master
+git push origin HEAD:master
+
+push to branch:
+git push <remote> <branch>
+git push  origin HEAD:branche01
+Si error: src refspec branche01 does not match any
+git push -f  origin HEAD:branche01
+
+
+telecharger :
+git clone https://github.com/andritoky/api-test-symfony.git
+git commit -m "firt clone"
+git pull  https://github.com/andritoky/api-test-symfony.git 
+
+clone branche specifique :
+git clone --branch nom-du-branche repo-url
+git clone --branch branche01 https://github.com/andritoky/api-test-symfony.git
+
+si push par:git push -f  origin HEAD:branche01
+git pull repo-url HEAD:branche01
+git pull https://github.com/andritoky/api-test-symfony.git HEAD:branche01
+git pull -f  https://github.com/andritoky/api-test-symfony.git HEAD:branche01
+
+
+Metre a jour clone local : 
+cmd/project
+git pull  repo-url  nom-du-branche
+git pull  https://github.com/andritoky/api-test-symfony.git branche01
+
+fetch + merge:
+git pull
+siple fetch:
+git fetch

@@ -1,0 +1,69 @@
+composer create-project symfony/website-skeleton  web-app
+composer create-project symfony/skeleton api-app
+
+Run : 
+php bin/console server:run
+php -S localhost:8000 -t public 
+symfony serve
+
+symfony server:start
+ou alors symfony server:start -d
+
+php bin/console debug:autowiring                  Liste des service de symfony
+php bin/console debug:autowiring calcule --all    Verification s'il y a un service "calcule" 
+
+Autoriser autowiring des Service des les controller:
+Service.yaml
+App\Controller\:
+   resource: '../src/Controller/'
+   tags: ['controller.service_arguments']
+
+Fecth data:
+composer require symfony/http-client
+use Symfony\Contracts\HttpClient\HttpClientInterface;
+# config/packages/framework.yaml
+framework:
+    http_client:
+        default_options:
+            max_redirects: 7
+        
+         
+
+
+
+
+
+
+
+upgrade node an npm lastest with nvm
+nvm install latest
+
+
+
+PROBLEME :
+version npm inferieur
+
+C:\Users\KimeruLenovo>npm install -g npm@latest
+npm WARN npm npm does not support Node.js v14.7.0
+npm WARN npm You should probably upgrade to a newer version of node as we
+npm WARN npm can't make any promises that npm will work with this version.
+npm WARN npm Supported releases of Node.js are the latest release of 4, 6, 7, 8, 9.
+npm WARN npm You can find the latest version at https://nodejs.org/
+npm ERR! cb.apply is not a function npm ERR! A complete log of this
+run can be found in: npm ERR! 
+
+SOLUTION :
+Activer dossier caher
+C:\Users\KimeruLenovo\AppData\Roaming\npm-cache\_logs\2020-08 10T09_36_56_388Z-debug.log
+Accédez au chemin où vous pouvez trouver le journal de débogage (ce fichier se trouve dans votre dossier npm-cache) C:\Users\KimeruLenovo\AppData\Roaming
+Mon path : C:\Users\Dev\AppData\Roaming
+Supprimez les dossiers NPM et NPM-Cache, mais NE réinstallez PAS node . une fois supprimé, revenez à votre ligne de commande et réutilisez la commande " npm install -g npm@latest "
+
+
+PROBLEME :
+npm WARN deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
+
+npm install source-map-resolve
+
+
+
