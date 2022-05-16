@@ -6,12 +6,15 @@ git config --global core.autocrlf false
 git push origin master
 git push -f origin master
 git push -u origin master
+   Si error: src refspec branche01 does not match any
+   error: failed to push some refs to 'https://github.com/andritoky/DOCUMENT.git'
 git push origin HEAD:master
 
 push to branch:
 git push <remote> <branch>
 git push  origin HEAD:branche01
-Si error: src refspec branche01 does not match any
+   Si error: src refspec branche01 does not match any
+   error: failed to push some refs to 'https://github.com/andritoky/DOCUMENT.git'
 git push -f  origin HEAD:branche01
 
 
