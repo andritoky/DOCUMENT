@@ -1,0 +1,2 @@
+PHP : Norme de codage 
+https://nouvelle-techno.fr/articles/bonnes-pratiques-php-psr-1-et-psr-4

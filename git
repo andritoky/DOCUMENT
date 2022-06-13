@@ -18,25 +18,33 @@ git push  origin HEAD:branche01
 git push -f  origin HEAD:branche01
 
 
-telecharger :
+Telecharger :
+git clone  repo-url
 git clone https://github.com/andritoky/api-test-symfony.git
 git commit -m "firt clone"
 git pull  https://github.com/andritoky/api-test-symfony.git 
 
+npm install : install dependance
+
 clone branche specifique :
 git clone --branch nom-du-branche repo-url
 git clone --branch branche01 https://github.com/andritoky/api-test-symfony.git
+
+
+Metre a jour clone  : 
+cmd/project
+git pull  repo-url  nom-du-branche
+git pull  https://github.com/andritoky/api-test-symfony.git branche01
 
 si push par:git push -f  origin HEAD:branche01
 git pull repo-url HEAD:branche01
 git pull https://github.com/andritoky/api-test-symfony.git HEAD:branche01
 git pull -f  https://github.com/andritoky/api-test-symfony.git HEAD:branche01
 
-
-Metre a jour clone local : 
-cmd/project
-git pull  repo-url  nom-du-branche
-git pull  https://github.com/andritoky/api-test-symfony.git branche01
+git pull et git fetch:
+git pull = git fetch + git merge : Telecharge et fusion le modification avec le projet local
+git fetch : Telecharge les modif
+git merge : fusion les modif
 
 fetch + merge:
 git pull

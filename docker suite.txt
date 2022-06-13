@@ -1,0 +1,16 @@
+cmd : docker help
+tuto : https://www.youtube.com/watch?v=O3SvhpnSZWY
+       https://www.youtube.com/watch?v=sn6PlRf-UHk
+
+Build:
+ docker build -t react-type-image -f Dockerfile.txt . 
+
+
+Docker hub :
+
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
+Symfony Docker github exemple:
+https://www.youtube.com/watch?v=pvQOnGjSjCo
+https://github.com/yoanbernabeu/symfony6-php8-in-docker-compose

@@ -1,0 +1,10 @@
+Event-dispatcher:
+composer require symfony/event-dispatcher
+
+Service.yamel
+App\EventListener\BarListener:
+        tags:
+            - { name: kernel.event_listener, event: foo, method: doSomething }
+
+LISTE des Kernel Events :
+php bin/console debug:event-dispatcher kernel.request

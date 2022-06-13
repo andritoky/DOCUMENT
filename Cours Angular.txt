@@ -1,0 +1,85 @@
+Angular courses : 
+
+- Enregistrer une composante (Bootstrapping):
+Dans app.module 
+declarations: [
+    AppComponent,
+    CoursesComponent,
+  ],
+
+- Directives structurelles ngFor & ngIf:
+<h2 *ngIf="liste && liste.length > 0">{{title}}</h2>  // si condition verifier afficher
+
+<div class="row" *ngFor=" let liste of listes">
+        <h5 class="card-title">{{liste.hotelName}}</h5>
+        <p class="card-text">{{liste.description}}</p>
+</div>
+
+- Les Pipes: Transformer les proprietes avant de les afficher
+<p>Price : {{liste.price | currency | lowercase}}</p>
+currency , lowercase , uppercase , date , percent , decimal , json , slice , async , ...
+
+exeption : 
+<p>{{liste.price | currency:'EUR':'symbol':'1.2-2':'fr' | lowercase}}</p> Erreur
+add app.module : 
+import { registerLocaleData } from '@angular/common';
+import localeFr from '@angular/common/locales/fr'
+registerLocaleData(localeFr, 'fr');
+
+- cycles de vie: Les plus utiliser
+OnInit : initialisation 
+OnChange : en cas de changement , ou en cas de propriete binding
+OnDestroy : Destruction
+ngDoCheck : il est appelé après chaque détection de changements
+
+- Créer un Pipe personnalisé:? Voir tuto
+
+- Communication :
+  Parent Enfant : @Input()
+  Enfant Parent  : @Output()
+
+  Enfant :
+  public rating: any = 12;
+  @Output()
+  public starRatingClicked: EventEmitter<string> = new EventEmitter<string>();
+  public sendRating(): void {
+    this.starRatingClicked.emit(this.rating)
+  }
+  <div (click)="sendRating()">  : declenche l'event pour que le parent recoit (starRatingClicked)="receiveRatingClick($event)"
+
+  Parent:
+  <app-start-rating [rating]="liste.rating" (starRatingClicked)="receiveRatingClick($event)"></app-start-rating>
+  public receiveRatingClick(event_rating: any) {
+    console.log("Rating :", event_rating);
+    this.clickSendRating = event_rating
+  }
+
+- Boostrap icone :
+npm i ngx-bootstrap-icons --save
+import { alarm-fill } from 'ngx-bootstrap-icons';
+<i-bs name="alarm-fill"></i-bs>
+
+
+- Services et l'injection des dépendances:
+
+import { Injectable } from "@angular/core";
+
+@Injectable({
+    providedIn: 'root'  //Pour le autowiring soit possible dans les component si non erreu
+})
+export class ClientService {
+    public getHotels() {
+        return listes
+    }
+public async getClient() {
+        let reponse = await fetch(`http://localhost:8000/api/client/get`)
+        let data = await reponse.json()
+        return data
+    }
+}
+//Injectable  permet d'enregistrer le Class au system d'injection d'angular
+ componant injection de depandance: 
+  private _clientService;
+  constructor( private clientService: ClientService) {
+    this._clientService = clientService;
+  }

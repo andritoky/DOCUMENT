@@ -1,0 +1,9 @@
+Gitlab, c’est une plateforme permettant d’héberger et de gérer des projets web de A à Z.
+Présentée comme la plateforme des développeurs modernes
+
+GIT LAB
+https://gitlab.com/mon-project1/test
+git remote add origin https://gitlab.com/mon-project1/test.git
+(git branch -M main)
+git push -uf origin master
+git push -uf remote brache-name

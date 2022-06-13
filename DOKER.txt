@@ -1,0 +1,24 @@
+Qu'est-ce qu'un conteneur ? 
+Maintenant que vous avez exécuté un conteneur, qu'est - ce qu'un conteneur ? 
+En termes simples, 
+un conteneur est un processus en bac à sable sur votre machine qui est isolé de tous les autres processus sur la machine hôte. 
+Cet isolement exploite les espaces de noms du noyau et les cgroups , 
+des fonctionnalités qui existent depuis longtemps dans Linux.
+Docker s'est efforcé de rendre ces fonctionnalités accessibles et faciles à utiliser.
+
+Pour résumer, un conteneur :
+est une instance exécutable d'une image. Vous pouvez créer, démarrer, arrêter, déplacer ou supprimer un conteneur à l'aide de DockerAPI ou CLI.
+peut être exécuté sur des machines locales, des machines virtuelles ou déployé sur le cloud.
+est portable (peut être exécuté sur n'importe quel système d'exploitation)
+Les conteneurs sont isolés les uns des autres et exécutent leurs propres logiciels, binaires et configurations
+
+VM : Machine Virtuel 
+Conteneur : VM plus legere
+N'a pas besoin de virtualisation 
+Isole les processus
+
+
+télécharger le package de mise à jour du noyau Linux si erreur:
+https://docs.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
+
+Tuto doc : https://codedesign.fr/docker-desktop-windows-debutant/

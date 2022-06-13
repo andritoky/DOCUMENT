@@ -1,36 +1,9 @@
-composer create-project symfony/website-skeleton  web-app
-composer create-project symfony/skeleton api-app
-
-Run : 
+composer create-project symfony/website-skeleton
 php bin/console server:run
-php -S localhost:8000 -t public 
-symfony serve
+
 
 symfony server:start
 ou alors symfony server:start -d
-
-php bin/console debug:autowiring                  Liste des service de symfony
-php bin/console debug:autowiring calcule --all    Verification s'il y a un service "calcule" 
-
-Autoriser autowiring des Service des les controller:
-Service.yaml
-App\Controller\:
-   resource: '../src/Controller/'
-   tags: ['controller.service_arguments']
-
-Fecth data:
-composer require symfony/http-client
-use Symfony\Contracts\HttpClient\HttpClientInterface;
-# config/packages/framework.yaml
-framework:
-    http_client:
-        default_options:
-            max_redirects: 7
-        
-         
-
-
-
 
 
 
@@ -64,6 +37,4 @@ PROBLEME :
 npm WARN deprecated source-map-resolve@0.6.0: See https://github.com/lydell/source-map-resolve#deprecated
 
 npm install source-map-resolve
-
-
 
