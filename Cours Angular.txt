@@ -83,3 +83,98 @@ public async getClient() {
   constructor( private clientService: ClientService) {
     this._clientService = clientService;
   }
+
+
+- RxJS et les Observables :(Asynchrone)
+  RxJS : bibliotheque JS  (Http ,form , router )
+
+
+- Requette service :
+  Observable.subscribe(Observer)
+  Observable.subscribe(
+    nextFn,       // Recois les objects chaque foi emit par l'Observable
+    errorFn,      // Return chaque fois que l observable rejet l'error
+    completeFn    // Return quand le dernier element et arrivé depuis l'observable
+  )
+
+Possible :
+  let subscription  = Observable.subscribe(Observer)
+  //plus tard
+  subscription.unsubscribe()
+
+
+- HttpClient : 
+
+  Dans app.module.ts :a dd HttpClientModule
+
+  Dans Service : 
+   private readonly HOTEL_API_URL = "url_api";
+
+    constructor(private http: HttpClient) { }
+
+    public getHotels(): Observable<IHotel[]> {
+        return this.http.get<IHotel[]>(this.HOTEL_API_URL).pipe(
+            tap((hotels: IHotel[]) => console.log('hotelsHttp:', hotels)),
+            catchError(this.handleError)
+        )
+    }
+
+    private handleError(error: HttpErrorResponse) {
+        if (error.error instanceof ErrorEvent) {
+            console.error('An error occurred :', error.error.message);
+        } else {
+            console.error(
+                'Backend return code' + error.status + ', Body was : ' + error.error
+            );
+        }
+        return throwError('Somethig bad happened ; please try again later')
+    }
+
+  Dans component : 
+   this._httpHotels.getHotels().subscribe({
+      next: hotels => {
+        this.listeFilter = hotels
+      },
+      error: err => this.errorMsg = err
+    });
+
+  Si use api/data.json : add dans angular.json : 
+   "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "assets": [
+              "src/api"
+            ],
+
+- Navigation avec le routerLink et router-outlet:
+
+  app.module.ts:
+
+  import { RouterModule } from '@angular/router'
+  imports: [
+    RouterModule.forRoot([
+      { path: 'home', component: HomeComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'hotels/:id', component: DetailComponent },
+      { path: 'hotels', component: HotelComponent },
+      { path: '**', redirectTo: 'home', pathMatch: 'full' },])
+  ]
+
+  Dans parent : 
+  <router-outlet></router-outlet>
+
+  Component : 
+  <li routerLinkActive="active">    // action si link correspond
+     <a class="nav-link" [routerLink]="['/hotels']">Listes</a>
+  </li>
+  
+  <button [routerLink]="['/hotels/', liste.hotelId ]" class="btn btn-dark">Detail</button>
+
+- Parametre: path: 'hotels/:id'
+
+  Facon 1 : 
+            constructor() { private route : ActivatedRoute}
+            ngOnInit(): void { 
+               const id =  +this.route.snapshot.paramMap.get('id');   // =+ Conversion  string en number
+            }
+  

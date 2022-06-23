@@ -1,0 +1,5 @@
+JENKINS :
+Download
+https://www.jenkins.io/download/thank-you-downloading-windows-installer-stable/
+Documentation :
+https://www.journaldunet.fr/web-tech/guide-de-l-entreprise-digitale/1443820-jenkins-logiciel-star-de-l-integration-continue-open-source-gratuit/

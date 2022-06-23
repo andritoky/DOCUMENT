@@ -1,0 +1,162 @@
+Api plateform:
+- Entity:
+/**
+ * @ApiResource(
+ * normalizationContext={"groups"={"liste_article:read"}},
+ * itemOperations={
+ *   "get" = {"normalization_context" = {"groups"={"liste_article:read" , "article_detail:read" , "article_category:read" , "article_comment:read"}}},
+ *   "put" = {"denormalization_context" = {"groups"={"update_article:read"}}},
+ *   "delete"
+ * }
+ * )
+ * @ORM\Entity(repositoryClass=ArticleRepository::class)
+ */
+
+OU:
+/**
+ * @ApiResource(
+ * normalizationContext={"groups"={"liste_article:read"}},
+ * denormalizationContext={"groups"={"Post:read"}},
+ * itemOperations={
+ *   "get" = {"normalization_context" = {"groups"={"liste_article:read" , "article_detail:read" , "article_category:read" , "article_comment:read"}}},
+ *   "put",
+ *   "delete"
+ * }
+ * )
+ * @ORM\Entity(repositoryClass=ArticleRepository::class)
+ */
+
+- Explication : 
+  - normalizationContext :  Lors des get   normalisation des donnes vennant du BD
+  - denormalizationContext : Lors des Post  (et update)  normalisation des requettes
+  - itemOperations={
+ *   "get" = {"normalization_context" = {"groups"={"liste_article:read" , "article_detail:read" , "article_category:read" , "article_comment:read"}}},
+ *   "put",
+ *   "delete"
+ * }    // Apeller lors de /monapi/article/{id}
+
+Entity Article : 
+@Groups({"liste_article:read","Post:read"})
+@Groups({"article_detail:read","Post:read"})
+
+Entity Category : 
+@Groups({"article_detail:read","Post:read"})
+
+Entity Comment : 
+@Groups({"article_comment","Post:read"})
+
+
+Resultat : /monapi/articles/30
+
+{
+  "@context": "/monapi/contexts/Article",
+  "@id": "/monapi/articles/30",
+  "@type": "Article",
+  "id": 30,
+  "title": "Mon article sur le future",
+  "description": "Tres beau  article sur le future",
+  "createdAt": "2022-01-09T17:08:31+00:00",
+  "category": {
+    "@id": "/monapi/categories/38",
+    "@type": "Category",
+    "id": 38,
+    "title": "Science"
+  },
+  "comments": [
+    {
+      "@id": "/monapi/comments/157",
+      "@type": "Comment",
+      "id": 157,
+      "author": "Josef ihany e"
+    },
+    {
+      "@id": "/monapi/comments/160",
+      "@type": "Comment",
+      "id": 160,
+      "author": "setAuthor Inconnu "
+    }
+  ],
+  "image": "https://via.placeholder.com/350x150",
+  "updatedAt": null,
+  "content": "Quia est quis eius ut. Accusantium odit aut provident.Repellendus officiis dolor vel dolorem. Ut id vel vitae sit. Omnis distinctio explicabo laboriosam dolorem pariatur. Est mollitia dolores aut.Fuga earum quae doloremque. Sapiente ut aperiam quas et tempora in aut. Maxime iure sit ab ipsum dolor libero quaerat. Omnis aperiam facilis tempore tempore."
+}
+
+- Autorise persiste Categorie lors de creaction Article : cascade={"persist"}
+
+  * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="articles" , cascade={"persist"})
+  * valid()
+  */
+  private $category;
+ 
+  Post : {
+    "title": "Foret ",
+    "description": "",
+    "category": {
+    "title": "Science"   <===
+    }
+  }
+
+
+- Validation : 
+/**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\NotBlank(message = "Description est obligatoire")
+     */
+
+ /**
+     * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="articles" , cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
+     * valid()                // attendre que valider avant de continuer
+     */
+    private $category;
+
+A NE PAS OUBLIER : Supprimer Cache
+
+
+- Filter et Search :
+
+
+use ApiPlatform\Core\Annotation\ApiFilter;
+use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+/**
+ * @ApiResource(
+ * paginationItemsPerPage = 2,
+ * paginationMaximumItemsPerPage = 2 ,
+ * paginationClientItemsPerPage = true,
+ * )
+ * @ApiFilter(SearchFilter::class, properties = {"id" : "exact" , "title" = "partial"})
+ * @ORM\Entity(repositoryClass=ArticleRepository::class)
+ */
+
+api : http://localhost:8000/monapi/articles?page=1&itemsPerPage=2
+      http://localhost:8000/monapi/articles?page=1&itemsPerPage=2&title=mada
+      http://localhost:8000/monapi/articles?page=1&itemsPerPage=2&id=32
+
+
+-  Fonctionnement d'API Platform : https://github.com/api-platform/core
+   
+- Opération personnalisé :
+
+  use App\Controller\ArticlePublishController;
+
+  itemOperations={
+ *   "publication" = {
+ *       "method" = "POST",
+ *       "path" = "/articles/{id}/publication",
+ *       "controller" = ArticlePublishController::class,
+ * }
+ * }
+
+  Dans controller :
+  class ArticlePublishController extends AbstractController
+ {
+    public function __invoke(Article $data): Article
+    {
+        // $data->setContent("Blablablablabal Oups !!");
+        // $data->addComment("Commment ihany e");
+        return $data;
+    }
+ }
+ Api : http://localhost:8000/monapi/articles/30/publication
+

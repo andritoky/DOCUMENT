@@ -1,0 +1,3 @@
+ACCES CONTROLL : 
+
+C:\Windows\System32\drivers\etc\Host
