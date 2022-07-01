@@ -231,7 +231,14 @@ Possible :
   ng g m shared/shared --flat -m hotel/hotel.module 
   Dans doc shared/ creer shared.module.ts et inject hotel.module.ts "--flat -m hotel/hotel.module"
   
+  Regle :
+  Si app.module.ts : imports: [HotelModule]
+  Et hotel.module.ts : imports: [SharedModule] 
 
-
+  Pour que app.module a acces a "SharedModule" 
+  Add a share.module.ts : 
+    exports: [
+      Ici tous ce que je veut que app.module a acces : depandence , component ,...
+  ],
 
   
