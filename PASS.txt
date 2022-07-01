@@ -48,5 +48,17 @@ Racoorcis :
 - Kameleon:
   lrandriamampionona@meilleurtaux.com
   pass : #L9
+
+- http://cours.local.epsi.mg
+  user : andritoky
+  pass :  andritoky@12345 ou #L9
   
+- Heroku 1 
+  user : r9 pass:#L9
+  user : raandritoky   pass:#L9 (edn mada)
+  https://ednmada.herokuapp.com/index.html
+
+- Test mail :
+  https://app.postdrop.io/   
+  lrandriamampionona@meilleurtaux.com  et r9@gmail.com pass: l9
   

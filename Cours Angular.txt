@@ -177,4 +177,61 @@ Possible :
             ngOnInit(): void { 
                const id =  +this.route.snapshot.paramMap.get('id');   // =+ Conversion  string en number
             }
+
+
+- Navigation :
+
+  <button class="btn btn-outline-info" (click)="backToList()">
+        retour a la liste
+  </button>
+
+  constructor(private router: Router) {}
+  public backToList(): void {
+    this.router.navigate(['/hotels']);
+  }
+
+
+- Angular GARDE : 
+
+  canActivate:  Suveiller l'acces a un url
+  canDeactivate: Suveiller la navigation en quittant l' url
+  Resolver: Recuperer des donnée avant de charger l 'url
+  canLoad: Prevenir la navigation asychrone
+  
+  ng g g hotel/detail : cree un service de garde pour Detail
+  app.module.ts : { path: 'hotels/:id', component: DetailComponent, canActivate: [DetailGuard] }
+  
+  Dans "detail.guard":
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): boolean{
+    const id = +route.url[1].path;
+    if (isNaN(id) || id <= 0) {
+      alert('Hotel inconnu !!')
+      this.router.navigate(['/hotels'])
+    }
+    return true;
+  }
+  
+  
+- NgModule : 
+  
+  Uniquement dans app.component :  bootstrap: [AppComponent] Le component appelé au demarage
+  
+  ng g m hotel/hotel --flat -m app
+  Dans doc hotel/ creer hotel.module.ts "hotel/hotel" et mettre a jour app.module.ts "--flat -m app"
+
+  Dans app.module.ts : imports: [HotelModule]
+  Dans hotel.module.ts : imports: [CommonModule , RouterModule.forChild([])]    CommonModule: acces a "ngif et ngfor" dans tous les sous module
+  
+  Puis importer les element neccessaire
+  Et redemarer server
+  
+
+  ng g m shared/shared --flat -m hotel/hotel.module 
+  Dans doc shared/ creer shared.module.ts et inject hotel.module.ts "--flat -m hotel/hotel.module"
+  
+
+
+
   

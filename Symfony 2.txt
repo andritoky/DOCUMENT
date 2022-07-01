@@ -1,3 +1,58 @@
+- DEPLOYEMENT : https://www.youtube.com/watch?v=s7DbfpybMVE
+ 
+ clear cache dev -prod 
+ APP_ENV=prod APP_DEBUG=0
+ Verifier les emplacement des EventListner et EventSubscriber 
+ Personnalisé page d'erreur
+ Verifier securité de dependence
+ Require and test puis desinstall  "requirement-checker"
+ Prockfile : web:heroku-php-apache2
+ install heroku cli : npm i -g heroku
+                      heroku login
+ Migration : heroku run php bin/console doctrine:migrations:migrate
+ Supp cache : heroku run php bin/console cache:clear
+
+- BASH:
+  heroku run bash
+  ls cd 
+  read file : cat filename.yml
+ https://symfo-test.herokuapp.com/
+
+- Liste router : :php bin/console debug:router
+  
+- si error en prod seil route "/" run
+  composer req symfony/apache-pack
+  qui cree "public/.htacces"
+  Re deployer
+
+- Si GET work mais POST not work prod : utiliser postman pour verifier l'erreur
+  Si probleme de migration :  
+          corrigé migration et redeployé
+          heroku run php bin/console doctrine:migrations:migrate
+          Deployé 
+
+-ERROR CORS EN PROD : 
+    soit manque config cors : test "prod" en local
+    soit absence de : "public/.htacces"
+    soit structure de base de donneé :  verifier migration , validation 
+
+
+Si erreur heroku :
+
+-verifier que mon version php a une opensll extension=openssl dans php ini
+
+-Package depreciata ou abondenner 
+ Remove ses package et enlever ces appel ds controller 
+
+-Script requirements-checker returned with error code 126
+ remote:        !!  sh: 1: requirements-checker: Permission denied
+ remote:        !!
+ remote:        Script @auto-scripts was called via post-install-cmd
+
+ Supprimer dans composer.json :"script": { "requirements-checker"}
+
+
+
 Event-dispatcher:
 composer require symfony/event-dispatcher
 
@@ -8,3 +63,4 @@ App\EventListener\BarListener:
 
 LISTE des Kernel Events :
 php bin/console debug:event-dispatcher kernel.request
+
