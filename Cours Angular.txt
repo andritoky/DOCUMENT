@@ -1,5 +1,11 @@
 Angular courses : 
 
+ERREUR : error TS2564: Property 'hotelForm' has no initializer and is not definitely assigned in the constructor.
+SOLUTION : tsconfig.json
+    "strictPropertyInitialization": false
+ ou "strict": false,
+
+
 - Enregistrer une composante (Bootstrapping):
 Dans app.module 
 declarations: [
@@ -241,4 +247,31 @@ Possible :
       Ici tous ce que je veut que app.module a acces : depandence , component ,...
   ],
 
+  
+
+  BrowserModule: ngif & ngfor
+  CommonModule: Directive ngif & ngfor
+  RouterModule et HttpClient : Requette http
+
+
+
+- Separé les ROUTE : 
+  Pour app.module : ng g m app-my-routing --flat
+  imports: [
+    RouterModule.forRoot([
+      { path: 'home', component: HotelComponent },
+    ]),
+  ]
+  et dans app.module.ts : 
+  imports: [
+    AppMyRoutingModule, ::: En dernier position pour eviter les comflit
+  ],
+
+
+- Angular FORMULAIRE:
+  <form novalidate [formGroup]="hotelForm">
+   Si  [formGroup]="hotelForm" pas reconnus 
+   imports: [
+    ReactiveFormsModule,
+   ]
   

@@ -1,3 +1,20 @@
 Angular :
  Structure :
      https://www.youtube.com/watch?v=oSpU6I9TwxA&list=PLrbLGOB571zeR7FUQifKmjUpT4ImldCPt&index=9
+
+
+I am passionate of websites and FullStack coding with 5 year of experience.
+I love challenges and new project that help me invest all skills and experience into succes them
+
+My tech skills inclide :
+
+Frontend :
+ Main : JavaScript , TypeScript , React/Redux , Next ,Angular , HTML & CSS
+ Additional: Jquery , Bootstrap , SemanticUI
+
+Backend : NodeJS , Express , Symfony/ApiPlateform
+
+DataBase : MongoDB/mongoose , PostgreSQL
+
+
+Version control system : Git , gitLab
