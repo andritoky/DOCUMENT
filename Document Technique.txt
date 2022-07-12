@@ -1,0 +1,106 @@
+OpenClassRoom course Document tech:
+
+https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique-de-votre-projet/6904179-tirez-le-maximum-de-ce-cours
+
+
+- Eviter les code mal ecrit ou mal formater
+- code  trop peu lisible, cela entraînera une perte de productivité de l’équipe
+- un gain de cohérence, en particulier en environnement partagé ;
+- un code plus lisible et maintenable ;
+- une économie de temps en évitant les coûts liés aux corrections multiples ;
+- adopter une attitude professionnelle au profit de l’équipe en équilibrant qualité et quantité.
+
+- La bonne attitude à avoir à propos de la documentation 
+    Coder pour l'equipe pas pour soit meme (doit etre comprehensible)
+    Ajustez la quantité et la qualité
+    Maintenez votre documentation
+    
+
+1- Écrivez du code autodocumenté:
+
+   Suivre les regles de clean code et clean architecture 
+   Les conventions de nommage et lisibilité
+   Utilisation des commentaire ou annotation pour php , expliquer role certain methode , class
+
+
+2 -Écrivez la documentation de votre projet:
+
+   * Limiter les commentaire : seul quand c'est utiler
+   
+   Cartouche :description , paramètres , résultat ,version ,auteur
+     
+           /**
+           * Allows to connect to a postgreSQL database
+           *
+           * @param url string of the endpoint to connect to
+           * @param user string of the user to be connected with
+           * @param password string of the user
+           *
+           * @return void
+           * @author Francis
+           * @version 1.0
+           */
+
+   * Si imposer par l'entreprise
+
+           // Copyright (C) 2020 by Fake Industries 
+           // Released under the terms of the Creative Commons Licence
+
+   * Les commentaires de suivi des changements : Qui n'est plus une bonne pratique
+
+           /** Change log (from 17/02/2020) 
+           * -------------------------- 
+           * 17/02/2020 : Add constructor to the class ; ;
+           */ 
+   
+
+3- Publiez votre documentation en ligne: Git
+     
+   Utiliser fichier README : fichier vitrine du projet  : objectif , titre , status , equipe , techo utiliser , licence
+   Hebergement a Redthedocs
+   
+4 -Écrivez la documentation de votre API :
+
+  Postman on line et local :
+  r9 pass: l9
+  Api-symfony-doc-technique  https://documenter.getpostman.com/view/20299751/UzJSJDNn#4eb65dd6-5a06-4c9a-adf3-4f9f361a6798
+  
+  Authentification
+  Definition des endpoints ;
+  Extraits de code
+  Exemple de requetes et reponses
+
+  Fonctions, des arguments, des types de retour, des classes
+  
+  Plateforme qui permet de gérer des API :
+     Postman
+     Apiary
+  
+
+
+5- Identifiez l'objectif de votre documentation technique
+
+   Il y a deux étapes de votre projet logiciel au cours desquelles vous devez créer de la documentation :
+
+    * lors de la phase de proposition du projet (Comme un plan de batiment) : Architecture macroscopique
+    * lors de la phase de mise en œuvre du projet :Detaile technique d'utilisation de l'app pour le client
+
+  Décrire un même système pour plusieurs personnes qui parlent des langues différentes
+  Un outil de communication permettant de comprendre le cœur d'un système.
+  
+
+   * PROPOSITION DU PROJET : a un Dirigent ou investisseur (Peu de terme technique)
+
+       Apparaître les AVANTAGES offerts par le projet en les comparant à son coût (ce que recherchent la plupart des entreprises)
+       COUTS : La somme des embauches
+               Temp consacré
+               Achats de matériel et des dépenses spéciales qu'il entraîne
+
+       L'architecture donne une vue globale 
+       Les principaux composants à développer
+       Leurs interfaces.
+  
+       COURS CAHIER DE CHARGE : https://openclassrooms.com/fr/courses/6739646-realisez-un-cahier-des-charges-fonctionnel
+       TUTO : https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique-de-votre-projet/6905461-identifiez-lobjectif-de-votre-documentation-technique
+
+

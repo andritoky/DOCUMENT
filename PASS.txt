@@ -5,7 +5,7 @@ Racoorcis :
 deployement:
   Api symfony : https://mon-test-symfo.herokuapp.com
   EDN : https://ednmada.herokuapp.com/index.html
-https://demo-react-symfo-front-portfol.herokuapp.com/
+  front-symfo : https://demo-react-symfo-front-portfol.herokuapp.com/
 
 - Instagramme : 
   randriamampionona9@gmail.com
@@ -70,4 +70,12 @@ https://demo-react-symfo-front-portfol.herokuapp.com/
 - Up work :
   randriamampiononaandritoky@ pass: l9
   Favorit singer: hilsong 
+
+
+- Lucidchart : Design BD https://lucid.app/documents#/dashboard
+  R9 pass : l9
   
+
+- Postman on line et local :
+  r9 pass: l9
+  Api-symfony-doc-technique  https://documenter.getpostman.com/view/20299751/UzJSJDNn#4eb65dd6-5a06-4c9a-adf3-4f9f361a6798

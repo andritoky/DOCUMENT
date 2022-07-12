@@ -1,0 +1,3 @@
+Postgret cmd code
+
+https://www.postgresqltutorial.com/postgresql-administration/postgresql-show-tables/
