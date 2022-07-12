@@ -104,3 +104,33 @@ https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique
        TUTO : https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique-de-votre-projet/6905461-identifiez-lobjectif-de-votre-documentation-technique
 
 
+   * MISE EN OEUVREDU PROJET : Une fois le projet validé
+
+       Voir cours openClassroom (ecrivez-la-documentation-technique-de-votre-projet)
+       
+
+
+6 - Créez une documentation pour les parties prenantes:
+    
+   Quel est mon public?
+   Ses Besoin ?
+   Adapter la Doc au besoin :
+     - Développeurs.
+     - Administrateurs de bases de données.
+     - Ingénieurs en génie logiciel.
+     - Architectes logiciels.
+
+    VOIR DETAIL TABLEAU  : https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique-de-votre-projet/6905462-creez-une-documentation-pour-les-parties-prenantes
+
+   Structure des dossiers,
+   Structure des fichiers, 
+   Structure des bases de données.
+
+   Structure des fichiers, 
+   Description hiérarchique des fichiers, 
+   Relations entre fichiers, 
+   Description des index.
+
+   Description de la solution, 
+   Principales fonctionnalités du système, 
+   Courte description de la structure des bases de données et des fichiers.
