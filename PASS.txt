@@ -43,6 +43,11 @@ deployement:
 - Github :
   r9@gmail.com pass: a1992
 
+- Docker Hub:
+  Docker ID : lantoniaina
+  email: r9
+  pass : l9
+
 - Linkedin : 
   randriamampiononaandritoky@gmail.com  pass : #L9
 
@@ -72,9 +77,13 @@ deployement:
   Favorit singer: hilsong 
 
 
+CHART:
 - Lucidchart : Design BD https://lucid.app/documents#/dashboard
   R9 pass : l9
-  
+- https://app.creately.com/d/xgghsopCvsC/edit
+  email : r9
+- Figma
+  r9 pass:l9
 
 - Postman on line et local :
   r9 pass: l9

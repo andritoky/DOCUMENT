@@ -1,7 +1,8 @@
-OpenClassRoom course Document tech:
+OpenClassRoom course Document tech:  " DEVELOPPEUR ET ARCHITECH LOGICIEL "
 
 https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique-de-votre-projet/6904179-tirez-le-maximum-de-ce-cours
-
+http://www2.ift.ulaval.ca/~lamontagne/glo3001/documentationArchitecture.pdf
+https://documenter.getpostman.com/view/20299751/UzJSJDNn#4eb65dd6-5a06-4c9a-adf3-4f9f361a6798
 
 - Eviter les code mal ecrit ou mal formater
 - code  trop peu lisible, cela entraînera une perte de productivité de l’équipe
@@ -116,7 +117,7 @@ https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique
    Ses Besoin ?
    Adapter la Doc au besoin :
      - Développeurs.
-     - Administrateurs de bases de données.
+     - Administrateurs de bases de données: une fois créée, elle supportera tout l'édifice et sera très difficile à modifier.
      - Ingénieurs en génie logiciel.
      - Architectes logiciels.
 
@@ -124,7 +125,7 @@ https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique
 
    Structure des dossiers,
    Structure des fichiers, 
-   Structure des bases de données.
+   Structure des bases de données : tables , Jointure , search
 
    Structure des fichiers, 
    Description hiérarchique des fichiers, 
@@ -134,3 +135,45 @@ https://openclassrooms.com/fr/courses/6398056-ecrivez-la-documentation-technique
    Description de la solution, 
    Principales fonctionnalités du système, 
    Courte description de la structure des bases de données et des fichiers.
+
+
+7 - BONNE PRATIQUE :
+    
+     « Produisez uniquement une documentation que vous pouvez gérer avec précision »
+     « L'idéal, c'est même de trouver quelque chose de "tout juste suffisant" »
+
+     * Qui vous êtes.
+     * Pour qui vous écrivez.
+     * À propos de quoi vous écrivez.
+
+     * Évitez les schémas complexes
+     * Expliquez les données des tableaux
+     * Si un tableau est présenté, expliquez les rangées et les colonnes
+
+    *  Documentation-Driven Design
+       Si votre logiciel n'a pas encore été créé, vous pouvez élaborer sa documentation pour faciliter le processus de conception
+    
+    * Utilisez des tableaux pour les développeurs
+
+
+8 - Formalisez vos conceptions à l'aide d'outils standard
+
+   * Comprendre l'environnement dans lequel le futur système devra fonctionner : 
+     ce que fera le système lorsqu'il sera opérationnel, 
+     quels problèmes il pourra résoudre, 
+     et comment il se comportera en termes de performances, 
+     de fiabilité, d'efficacité et de sécurité.
+
+
+  * Expliquez la fréquence et le type des flux de données
+
+    Quand le processus commence-t-il ?  Un client navigue sur un site WebStreet 
+    Que se passe-t-il au milieu
+    Comment se termine-t-il 
+
+    Processus asynchrone
+    Processus synchrone
+    Processus par lots 
+   
+
+

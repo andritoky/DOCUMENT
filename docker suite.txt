@@ -14,3 +14,56 @@ docker push new-repo:tagname
 Symfony Docker github exemple:
 https://www.youtube.com/watch?v=pvQOnGjSjCo
 https://github.com/yoanbernabeu/symfony6-php8-in-docker-compose
+
+
+DABORD LANCE L'IMAGE DOCKER 
+
+- COMMAND :
+
+docker images                       liste image
+docker ps                          liste conteneur
+docker pull                        telecharger un image existant
+docker pull node                   telecharger image node js
+
+docker run -it node                lancer conteneur
+docker run -it -d node             lancer en arrier plan
+docker ps
+
+docker stop contenaireId           stopper un conteneur 
+
+docker search name                 chercher un image docker 
+
+docker ps
+docker exec -ti conteneurID bash   entre dans un conteneur docker en run pr faire des action : cd/
+docker rm contenaireId
+
+- CREER UN IMAGE :  3 fichiers
+
+   dockerfile.txt
+   .dockerignore
+   docker-compose.dev.yml
+   
+   Copier et supprimer Dockerfile dans notepad ou block note++
+   
+   docker build -t react_projet                       creer l'image  descrit dans Dockefile
+   docker build -t react_projet -f Dockerfile.txt     creer avec force
+   docker run -it react_projet
+   
+
+DOCKER COMPOSE :
+
+  Organise plusieur contenaire en un seul service
+  Docker Mac et windows a deja Docker Compose mais sur Linux Besoin d'installer
+
+  Command le meme que Docker
+
+  docker-compose --version                           Version docker compose 
+
+  utilisation :  creer docker-compose.yml
+
+   
+
+
+  
+
+
