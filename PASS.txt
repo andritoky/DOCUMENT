@@ -67,6 +67,8 @@ deployement:
   user : r9 pass:#L9
   user : raandritoky   pass:#L9 (edn mada)
   https://ednmada.herokuapp.com/index.html
+  madalifetechologie@gmail.com pass : #L9
+  https://discutions-front.herokuapp.com/login
 
 - Test mail :
   https://app.postdrop.io/   
@@ -76,6 +78,10 @@ deployement:
   randriamampiononaandritoky@ pass: l9
   Favorit singer: hilsong 
 
+- Malt :
+  randriamampiononaandritoky@gmail.com
+  #L9
+  
 
 CHART:
 - Lucidchart : Design BD https://lucid.app/documents#/dashboard
