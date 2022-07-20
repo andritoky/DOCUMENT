@@ -38,6 +38,8 @@ deployement:
   email : r9@gmail.com
   
 - GitLab Toky:
+  git config --global user.email "r9@gmaim.com" 
+  git config --global user.name "andritoky" 
   r9@gmail.com pass: a92
 
 - Github :
@@ -50,6 +52,7 @@ deployement:
 
 - Linkedin : 
   randriamampiononaandritoky@gmail.com  pass : #L9
+  randriamampionona@gmail.com pass l9
 
 - Okta : 
   andritoky
@@ -94,3 +97,14 @@ CHART:
 - Postman on line et local :
   r9 pass: l9
   Api-symfony-doc-technique  https://documenter.getpostman.com/view/20299751/UzJSJDNn#4eb65dd6-5a06-4c9a-adf3-4f9f361a6798
+
+- SQLserver AFI 
+  server name = rec.afiassurances.fr
+  uid= dbadminafi; pwd =12*Gui-Afi$2021
+
+- Compte Oracle : r9 pass : #L9
+  Pour MySQL Workbench Database
+
+ - 5 EURO.COM 
+   r9 pass l9
+- Mr Bertin Poste 15

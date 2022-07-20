@@ -1,0 +1,12 @@
+Sql Server Command : 
+
+- Show columns in Table : 
+  SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'AdhesionEtat' ORDER BY ORDINAL_POSITION ;
+
+- FOREIGN KEY (FK): (Jointure)
+  Champ (ou une collection de champs) dans une table qui fait référence à la CLÉ PRIMAIRE dans une autre table.
+
+- La PRIMARY KEY (PK) contrainte identifie de manière unique chaque enregistrement dans une table et NOT NULL.
+
+Diagramma db
+https://www.youtube.com/watch?v=L-Mq6l9I8Ys
