@@ -1,22 +1,29 @@
-cv
+
 Benevol et Freelance : 2017
 NodeJS , ejs , react
 
 VS : 2020 
-BackEnd : Node JS
+Back Dev : Node JS Express 
 Maintenance et Developpement de Application Web Locale 
 Gestion de Monitoring et de System d'alarme
-Server RaspberPi
-Arduino : Programmation d'appareil de telesurveillance
+Programmation de Server (PC , RaspberPi)
+Arduino (robotique) : Programmation d'appareil de telesurveillance et de detecteur
 
 MeilleurTaux : 2022  
-FULLSTACK : Typescript React NodeJS Symfony
+FULLSTACK : Typescript React NodeJS Symfony 
 MCD 
 Document Technique API
-Maintenance 
-Ajout Nouvelle fonctionalité 
+Developpement et Maintenance Site (Api et Front)
+Ajout Nouvelle fonctionalité (Tunnel de souscripton ,...)
+CMS JOOMLA
 
-Autre Techno : Angular , MongoBD , PostgresQL, SqlServer 
+
+
+Autre Techno : 
+Angular ,Next
+MongoBD , PostgresQL, SqlServer 
+Framework : bootstrap , ApiPlateform 
+
 Veresionning : git , gitLab
 Environement : Docker
 Autre outil : PSD , Ai 
@@ -26,3 +33,11 @@ Emedia : Information et Pprogrammation
 EPSI : Formation Pro Dev Web 
 
 Linkedin : R Lantoniaina Andritoky
+
+
+
+
+0090ac bleu
+bcbcbc gris
+f8e71c JAUNE
+e91d63

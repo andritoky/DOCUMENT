@@ -1,0 +1,13 @@
+- Quel est la difference entre git fetch et git pull?
+
+- Que fait : git remote -v
+
+
+
+- Comment annuler la dernier commit et garder le modification
+
+   A git reset
+   B git reset --hard
+   C git reset --soft
+   D git reset --soft HEAD~1
+   E git reset --hard HEAD~1
