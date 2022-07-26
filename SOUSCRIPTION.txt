@@ -1,0 +1,11 @@
+MeilleurTaux : Symfony 4.4.2
+
+clone project 
+installer doctrine bundle
+composer install 
+
+Suivre les depandance et deboguer
+
+- php bin/console debug:router
+- Assurer que le nom des "routeur" et le nom du répertoire dans le "dossier public" ne sont pas les mêmes
+  si nom  : requested ressource / was not found on this server

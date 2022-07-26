@@ -12,6 +12,7 @@ Affaire:
   Plateform permettant a tout le monde vendre a l'etranger
   De trouver des client et fournisseur
 
+- Agence de Recrutement dev /entreprise par des dev
 
 MYLES MUNROE: 
  - Tout personne qui la metrise sur qul chose sera recheché (les gens viendra)
@@ -21,3 +22,4 @@ MYLES MUNROE:
  - Le domaine que j'ai du talen et la cle du progres et prosperité
  - La vision fait de vous un Roi un maitre 
  - La vision doit etre la raison de mes acte
+

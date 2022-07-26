@@ -1,0 +1,16 @@
+TWIG :
+- Les block :
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+
+Il est composé de différents "blocs" qui correspondent à des emplacements dans lesquels nous allons pouvoir "injecter" du contenu.
+
+title : contiendra le titre
+stylesheets : le contenu css
+body : le contenu de la page
+javascripts : le javascript de la page
+
+
+- composer require symfony/asset  
+  <link href="{{ asset('css/test.css') }}" rel="stylesheet"/>
+  <script src="{{ asset('js/test.js') }}"></script>
