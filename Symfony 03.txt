@@ -1,0 +1,69 @@
+Assurance vie :
+Si error "composer install" ou "composer update"
+RUN:
+composer require symfony/orm-pack
+composer require --dev symfony/maker-bundle
+PUIS: 
+composer install
+
+Symfony:
+
+- Session :
+use Symfony\Component\HttpFoundation\Session\Session;
+
+$session = new Session();
+$session->start();
+$session->set('test', 'RaTestSesionTyEh');
+$session->set('name', 'OUUUUUUUPPPP!!!');
+$sessionName = $session->get('name');
+$session->clear();
+
+
+- Redirection : GET
+  Submit : POST
+
+
+- Twig to pdf  (https://ourcodeworld.com/articles/read/799/how-to-create-a-pdf-from-html-in-symfony-4-using-dompdf)
+  composer require dompdf/dompdf
+
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+// Include Dompdf required namespaces
+use Dompdf\Dompdf;
+use Dompdf\Options;
+
+class DefaultController extends Controller
+{
+    public function index()
+    {
+        // Configure Dompdf according to your needs
+        $pdfOptions = new Options();
+        $pdfOptions->set('defaultFont', 'Arial');
+        
+        // Instantiate Dompdf with our options
+        $dompdf = new Dompdf($pdfOptions);
+        
+        // Retrieve the HTML generated in our twig file
+        $html = $this->renderView('default/mypdf.html.twig', [
+            'title' => "Welcome to our PDF Test"
+        ]);
+        
+        // Load HTML to Dompdf
+        $dompdf->loadHtml($html);
+        
+        // (Optional) Setup the paper size and orientation 'portrait' or 'portrait'
+        $dompdf->setPaper('A4', 'portrait');
+
+        // Render the HTML as PDF
+        $dompdf->render();
+
+        // Output the generated PDF to Browser (force download)
+        $dompdf->stream("mypdf.pdf", [
+            "Attachment" => true
+        ]);
+    }
+}

@@ -1,4 +1,9 @@
 TWIG :
+
+{{ ... }}  permet l'affichage d'une expression 
+{% ... %}  exécute une action ;
+{# ... #}  utilisé pour des commentaires.
+
 - Les block :
 {% block body %}{% endblock %}
 {% block javascripts %}{% endblock %}
@@ -14,3 +19,13 @@ javascripts : le javascript de la page
 - composer require symfony/asset  
   <link href="{{ asset('css/test.css') }}" rel="stylesheet"/>
   <script src="{{ asset('js/test.js') }}"></script>
+
+- Filtre (utilie l'operateur pipe |): change d'affichage
+  {{ 'foo'|capitalize|reverse }} {# "Oof" #}
+  date,first,last,length,number_format 
+
+- Les "macros" permettent d'automatiser toutes les tâches d'intégration répétitives qui ne nécessitent aucun calcul
+  Voir pratique
+
+- Include : {% include "includes/test.html.twig" %}
+

@@ -82,9 +82,11 @@ deployement:
   Favorit singer: hilsong 
 
 - Malt :
-  randriamampiononaandritoky@gmail.com
+  randriamampiononaandritoky@gmail.com et r9@gmail.com
   #L9
-  
+
+- 5 EURO.COM 
+  r9 pass l9 
 
 CHART:
 - Lucidchart : Design BD https://lucid.app/documents#/dashboard
@@ -105,6 +107,5 @@ CHART:
 - Compte Oracle : r9 pass : #L9
   Pour MySQL Workbench Database
 
- - 5 EURO.COM 
-   r9 pass l9
+
 - Mr Bertin Poste 15
