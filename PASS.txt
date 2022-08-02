@@ -104,6 +104,14 @@ CHART:
   server name = rec.afiassurances.fr
   uid= dbadminafi; pwd =12*Gui-Afi$2021
 
+- JOOMLA :
+  raandritoky@gmail.com pass : lantoniaina
+  site : lantoniaina.joomla.com
+
+  https://lantoniaina.joomla.com/administrator
+  Username: ayireyos
+  Password: ShdmfYR7
+
 - Compte Oracle : r9 pass : #L9
   Pour MySQL Workbench Database
 

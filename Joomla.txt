@@ -1,0 +1,18 @@
+Joomla :
+
+
+- https://lantoniaina.joomla.com/administrator
+  Username: ayireyos
+  Password: ShdmfYR7
+
+- Template joomla a telecharger : https://warptheme.com/joomla-templates/
+
+- Upload Template : 
+  Telecharger template version zip
+  Systeme/Installation/extension                          // Upload zip template
+  Systeme/template/Styles des templates du site           // Activer le template 
+  Systeme/template/Templates du site                      // Liste et Code source du template et Structure de fichier
+  Systeme/template/Styles des templates du site/Cliquer/Teplate Option    // Modification - Ajout de nouvelle Fonnctionnalité
+
+- Affichage sur Page Home :
+  Contenus/article/ Selectionner Epingler
