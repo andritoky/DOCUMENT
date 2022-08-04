@@ -9,6 +9,7 @@ Joomla :
 
 - Upload Template : 
   Telecharger template version zip
+  Dans Admin :
   Systeme/Installation/extension                          // Upload zip template
   Systeme/template/Styles des templates du site           // Activer le template 
   Systeme/template/Templates du site                      // Liste et Code source du template et Structure de fichier
