@@ -17,3 +17,17 @@ Joomla :
 
 - Affichage sur Page Home :
   Contenus/article/ Selectionner Epingler
+
+- Ordre d'article (plusieur article ds un seul page)
+  Contenus/Articles = Activer epinglé selon lors que je veut apparaitre l'article 
+
+- Install extension :
+  System/install/extension/installer a partir du web (exemple : EJC Editeur)
+  Un template est aussi un extension
+
+-Comfig global / Reglage
+
+- Module : 
+ Contenus /Module 'site'                pour le site
+ Contenus /Module 'Administration'      admin de joomla
+ Rq: pour moi ( ne fonctionne que pour le template initial)
