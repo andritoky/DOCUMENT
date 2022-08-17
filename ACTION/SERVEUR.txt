@@ -1,0 +1,24 @@
+Serveur :
+
+- Mkr gsm 1400 + pc
+- Apk envoie instantané de sms sur cloud et l'expoiter 
+- Commande ADB
+- kit de développement d'accessoires Android Open 
+  https://source.android.com/docs/core/accessories
+
+
+
+
+- ADB commmande
+Activer mode develloper android : Trouver Builde Number
+Dans Xiaomi note 4 : Apropos/version MIUI (Cliquer plusieur foi)
+Donwload  Android SDK Platform-Tools pour PC est installer
+https://developer.android.com/studio/releases/platform-tools
+Enregistre dans le variable d'environnement
+
+
+ADB recevoir des sms:
+ Ajouter un événement Contact=>SMS ; Ajoutez une action Mémoire => Écrire un fichier, 
+ vous pouvez y enregistrer des SMS dans un nouveau fichier à chaque fois ou dans le même avec un séparateur. 
+ Quoi qu'il en soit, enregistrez-le sur / sdcard ou tout autre chemin accessible via ADB. 
+ Surveillez ce chemin avec ADB et lisez le contenu des SMS.
