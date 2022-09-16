@@ -1,10 +1,11 @@
 Detail :
 - Stock appareil a installer
 
+In
 
 LOCAL :
 - Maison de l'entreprenariat 
-  5000 ar/heure
+  5000 ar/heure  2000 ar si NIF STAT
   20000 ar/demi-journé 
 
 
@@ -17,7 +18,7 @@ ACCELERATION :
 - Orangefab : appel a candidature fin septembre 15 pour repondre
 - Embassade de france
 - Nexta
-- TJE : lancer 
+- TJE : 30 Septembre
 - cyber securité CNAM MADAGASCAR
 
 - Stage en Entreprenariat 22-26 aout Centre d'excellence en Entreprenariat
