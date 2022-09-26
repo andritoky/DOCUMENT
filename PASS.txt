@@ -9,27 +9,21 @@ deployement:
 - Instagramme : 
   randriamampionona9@gmail.com
   username : l4
-  pass : l9
 
 - Instagramme2 : 
   +261348675606
   username : l49
-  pass : l9
 
 - Tik Tok 
   0348675606
-  pass : #a92
   nom utilisateur : lantoniainatoky
-- Avotra phone : 3910765
 
 - Minea : Recherche produit plus vendus sur fb
   randriamampionona9@gmail.com
-  Pass: #L9
 
 - OpenClasroom :
   User : Lantonaina Andritoky
   email: r9@gmail.com
-  pass : zx94rz4drsSR8
 
 - Docker Hub : 
   Docker id : lantoniaina
@@ -38,64 +32,58 @@ deployement:
 - GitLab Toky:
   git config --global user.email "r9@gmaim.com" 
   git config --global user.name "andritoky" 
-  r9@gmail.com pass: a92
 
 - Github :
-  r9@gmail.com pass: a1992
+  r9@gmail.com 
 
 - Docker Hub:
   Docker ID : lantoniaina
   email: r9
-  pass : l9
 
 - Linkedin : 
-  randriamampiononaandritoky@gmail.com  pass : #L9
-  randriamampionona@gmail.com pass l9
+  randriamampiononaandritoky@gmail.com  
+  randriamampionona@gmail.com pass 
 
 - Okta : 
   andritoky
-  pass:  lantoniainaandritoky
  
 - Kameleon:
   lrandriamampionona@meilleurtaux.com
-  pass : #L9
 
 - http://cours.local.epsi.mg
   user : andritoky
-  pass :  andritoky@12345 ou #L9
   
 - Heroku 1 
-  user : r9 pass:#L9
+  user : r9 
   user : raandritoky   pass:#L9 (edn mada)
   https://ednmada.herokuapp.com/index.html
-  madalifetechologie@gmail.com pass : #L9
+  madalifetechologie@gmail.com 
   https://discutions-front.herokuapp.com/login
 
 - Test mail :
   https://app.postdrop.io/   
-  lrandriamampionona@meilleurtaux.com  et r9@gmail.com pass: l9
+  lrandriamampionona@meilleurtaux.com  et r9@gmail.com 
 
 - Up work :
-  randriamampiononaandritoky@ pass: l9
+  randriamampiononaandritoky@ 
   Favorit singer: hilsong 
 
 - Malt :
   randriamampiononaandritoky@gmail.com et r9@gmail.com
-  #L9
 
 - 5 EURO.COM 
-  r9 pass l9 
+ 
 
 CHART:
 - Lucidchart : Design BD https://lucid.app/documents#/dashboard
-  R9 pass : l9
+  R9 
 - https://app.creately.com/d/xgghsopCvsC/edit
   email : r9
 - Figma
-  r9 pass:l9
+  r9 
 
 - Postman on line et local :
-  r9 pass: l9
+  r9 
   Api-symfony-doc-technique  https://documenter.getpostman.com/view/20299751/UzJSJDNn#4eb65dd6-5a06-4c9a-adf3-4f9f361a6798
 
 
@@ -104,20 +92,14 @@ CHART:
   site : lantoniaina.joomla.com
 
   https://lantoniaina.joomla.com/administrator
-  Username: ayireyos
-  Password: ShdmfYR7
 
-- Compte Oracle : r9 pass : #L9
+- Compte Oracle : 
   Pour MySQL Workbench Database
 
-
-- Mr Bertin Poste 15
 
 https://go.yomidenzel.com/jour-11623924552779?cf_uvid=0ed525458e55aad8ee4023353a6eab12
 
 - EBDM site 
-  randriamampiononaandritoky@gmail.com  l9
+  randriamampiononaandritoky@gmail.com 
 
-- Simafri 
-  r9    pass: 3u3d{o}2fBI
-  Domaine : https://www.youtube.com/watch?v=EX4w9hsduNA
+
