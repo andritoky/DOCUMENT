@@ -1,7 +1,6 @@
 Racoorcis : 
   https://outlook.office.com/mail/
-  https://login.groupemeilleurtaux.com/oauth2/v1/authorize?client_id=okta.2b1959c8-bcc0-56eb-a589-cfcfb7422f26&code_challenge=bvdSlf9Uzva8PFqFb01ee0PQPC9tyiVZd0y_5XshC_k&code_challenge_method=S256&nonce=lQVtY6GdJf1y2LHsjepQ3lA2ge3S9CZYMUsy9tlYYeZ2RXsHAGL1d7TWBpq3ab1K&redirect_uri=https%3A%2F%2Flogin.groupemeilleurtaux.com%2Fenduser%2Fcallback&response_type=code&state=gCui3IMpG96LhUN1WWLrDTwGBD0UN7wsoY5XjQaH4ycQoELD1X2IEFTlsyDqusQr&scope=openid%20profile%20email%20okta.users.read.self%20okta.users.manage.self%20okta.internal.enduser.read%20okta.internal.enduser.manage
-
+ 
 deployement:
   Api symfony : https://mon-test-symfo.herokuapp.com
   EDN : https://ednmada.herokuapp.com/index.html
@@ -9,13 +8,13 @@ deployement:
 
 - Instagramme : 
   randriamampionona9@gmail.com
-  username : lantoniaina4
-  pass : lantoniaina9
+  username : l4
+  pass : l9
 
 - Instagramme2 : 
   +261348675606
-  username : lantoniaina49
-  pass : lantoniaina9
+  username : l49
+  pass : l9
 
 - Tik Tok 
   0348675606
@@ -27,16 +26,6 @@ deployement:
   randriamampionona9@gmail.com
   Pass: #L9
 
-- Placement gitLab :
-  firstname : Lantoniaina  Lastname : andritoky
-  username : andritoky
-  mail : lrandriamampionona@meilleurtaux.com
-  pass : a92
-
-- Groupe Meilleur taux :
-  lrandriamampionona@meilleurtaux.com	afi$2022LR05 OU afi$2022TK05 (login.meilleurtaux)
- 
-- tellizen@gmail.com    pass :tellizen2022
 - OpenClasroom :
   User : Lantonaina Andritoky
   email: r9@gmail.com
@@ -109,9 +98,6 @@ CHART:
   r9 pass: l9
   Api-symfony-doc-technique  https://documenter.getpostman.com/view/20299751/UzJSJDNn#4eb65dd6-5a06-4c9a-adf3-4f9f361a6798
 
-- SQLserver AFI 
-  server name = rec.afiassurances.fr
-  uid= dbadminafi; pwd =12*Gui-Afi$2021
 
 - JOOMLA :
   raandritoky@gmail.com pass : lantoniaina
